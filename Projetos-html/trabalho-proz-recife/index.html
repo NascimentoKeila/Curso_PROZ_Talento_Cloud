@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recife Antigo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="marco-zero.html">Marco Zero</a>
+      <a href="outros-pontos-turisticos.html">Pontos turísticos</a>
+    </nav>
+  </header>
+  <main>
+    <section class="recife-antigo">
+      <h1>Recife Antigo</h1>
+      <p>O Recife Antigo é um bairro histórico da cidade do Recife, capital de Pernambuco. É um dos principais pontos turísticos da cidade, com um rico patrimônio cultural e arquitetônico.</p>
+      <div class="img-container">
+         <img src="./img/recife-antigo.jpg" alt="Recife Antigo">
+      </div>
+      <p>O bairro foi fundado em 1537, e foi o primeiro núcleo urbano da cidade. No século XVII, o Recife Antigo foi um importante centro comercial e cultural, e foi palco de importantes acontecimentos históricos, como a Inconfidência Pernambucana.</p>
+      <p>Hoje, o Recife Antigo é um bairro vibrante, com uma vida cultural intensa. O bairro abriga museus, galerias de arte, restaurantes, bares e lojas.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+  <script>function loadPage(page) {
+    fetch(page)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("content").innerHTML = data;
+        })
+        .catch(error => console.error(error));
+}
+</script>
+</body>
+</html>
